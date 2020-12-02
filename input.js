@@ -1,4 +1,5 @@
 const { connect } = require('./client');
+const { message } = require('./constants')
 let connection;
 
 // Setup User interface, allow for keyboard interactions 
