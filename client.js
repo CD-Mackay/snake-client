@@ -19,16 +19,7 @@ const connect = function() {
     console.log("Successfully connected to game server \n WOOOOOH!");
     conn.write("Name: Cnr");
   })
-  // send "move: up" command and other practice
-  conn.on('connect', () => {
-  // possibly will be deleted soon 
-    
-
-  })
-  //----------------------------------------
   return conn;
 }
-
-
 
 module.exports = { connect };

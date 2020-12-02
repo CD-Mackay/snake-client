@@ -5,5 +5,3 @@ console.log("Connecting...");
 let conn = connect();
 
 setupInput(conn);
-module.exports = { connect };
-// console.log( connect() );
