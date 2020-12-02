@@ -13,11 +13,18 @@ const connect = function() {
   conn.on('data', (data) => { 
     console.log('Server says: ', data);
   });
-
+// when connection is established, sets the player's name to pre-determined initials
   conn.on('connect', () => {
     console.log("Successfully connected to game server \n WOOOOOH!");
     conn.write("Name: Cnr");
   })
+  // send "move: up" command and other practice
+  conn.on('connect', () => {
+  // possibly will be deleted soon 
+    
+
+  })
+  //----------------------------------------
   return conn;
 }
 
