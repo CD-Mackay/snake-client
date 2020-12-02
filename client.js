@@ -12,6 +12,11 @@ const connect = function() {
 // Prints incoming messages from server to the console
   conn.on('data', (data) => { 
     console.log('Server says: ', data);
+  });
+
+  conn.on('connect', () => {
+    console.log("Successfully connected to game server \n WOOOOOH!");
+    conn.write("Name: Cnr");
   })
   return conn;
 }
