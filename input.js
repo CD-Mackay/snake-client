@@ -20,6 +20,14 @@ const setupInput = function(conn) {
       connection.write("Move: right");
     } else if (key === "a") {
       connection.write("Move: left");
+    } else if (key === "e") {
+      connection.write("Say: TSwift: Snake it off!")
+    } else if (key === "q") {
+      connection.write("Say: nosnakesonthisplane")
+    } else if (key === "x") {
+      connection.write("Say: hello world");
+    } else if (key === "z") {
+      connection.write("Say: SHNAAAKE!")
     }
   }
   stdin.on('data', (key) => {
